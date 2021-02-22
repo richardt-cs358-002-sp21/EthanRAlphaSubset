@@ -21,4 +21,9 @@ public class AlphabetSubset {
     return subset;
   }
 
+  public boolean getPhrase() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
 }

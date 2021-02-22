@@ -5,6 +5,7 @@ package AlphaSubset;
 
 import java.util.ArrayList;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -89,4 +90,17 @@ class AlphabetSubsetTest {
   @Test
   void assertEquals(boolean expected, boolean actual) {
   }
+  
+  @Test
+  void lowerCaseLettersAreValid() {
+    AlphabetSubset subset = new AlphabetSubset("abcdefghijklmnopqrstuvwxyz");
+    Assert.assertEquals(subset.getPhrase(), "abcdefghijklmnopqrstuvwxyz");
+  }
+  
+  @Test
+  void validSymbols() {
+    AlphabetSubset subset = new AlphabetSubset(" !\"#$%&'()*,-.:;?@");
+    Assert.assertEquals(subset.getPhrase(), " !\"#$%&'()*,-.:;?@");
+  }
+  
 }
