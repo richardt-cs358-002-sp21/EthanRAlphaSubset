@@ -1,5 +1,5 @@
 /**
- * test1
+ * Ethan Reed CS358 SPRING 2021
  */
 package AlphaSubset;
 
